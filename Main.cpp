@@ -1,3 +1,4 @@
+
 #include <iostream>
 #include <stack>
 #include <string.h>
@@ -50,7 +51,7 @@ class Caculator{
 		string str;
 		stack<node>s;
 		queue<node>q;
-		map<char,int>op;//”≈œ»º∂ 
+		map<char,int>op;
 	public:
 		Caculator(string expression){
 			this->str=expression;	
@@ -95,7 +96,7 @@ class Caculator{
 		}
 };
 int main(){
-	Caculator c("1+2*3*4-5/10+3");
+	Caculator c("1+2+3112*3*4-5/10+3");
 	printf("%lf",c.result());
 	return 0;
 }
